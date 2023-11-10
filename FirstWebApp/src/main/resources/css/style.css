@@ -1,0 +1,84 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-item:last-child {
+    border-bottom: none;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background: #5cb85c;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    margin-bottom: 20px;
+    width: calc(100% - 24px); /* Adjust input width considering padding and border */
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background: #5cb85c;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+.error {
+    color: red;
+}
+
+.completed {
+    text-decoration: line-through;
+}
